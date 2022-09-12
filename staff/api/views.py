@@ -1,7 +1,8 @@
 from rest_framework import viewsets
-from staff.models import Staff, Department
-from staff.api.serializers import StaffSerializer, DepartmentSerializer
-from staff.api.filters import StaffFilter, DepartmentFilter
+
+from staff.api.filters import DepartmentFilter, StaffFilter
+from staff.api.serializers import DepartmentSerializer, StaffSerializer
+from staff.models import Department, Staff
 
 
 class StaffViewSet(viewsets.ReadOnlyModelViewSet):

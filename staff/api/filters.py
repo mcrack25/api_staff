@@ -1,9 +1,8 @@
 from django import forms
-from django_filters import rest_framework as filters
-from django.db.models.expressions import Value
-from django.db.models.functions import Concat
-from staff.models import Staff, Department, Post
 from django.db.models import Q
+from django_filters import rest_framework as filters
+
+from staff.models import Department, Post, Staff
 
 
 class StaffFilter(filters.FilterSet):

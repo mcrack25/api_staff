@@ -1,5 +1,5 @@
 from django.db import models
-from staff.querysets import StaffManager
+from staff.managers import StaffManager
 
 
 class Department(models.Model):
